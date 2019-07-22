@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DynetixUtility"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "Dynetix utility functiuons framework."
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "A set of utility functions, written in Swift, from Dynetix"
 
-  spec.homepage     = "http://www.dynetix.com/products.htm"
+  spec.homepage     = "http://www.tjsystems.com/products.htm"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/tchan1010/DynetixUtility", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/tchan1010/DynetixUtility.git", :tag => "1.0.0" }
   #spec.source       = { :path =>'.' }
 
 
