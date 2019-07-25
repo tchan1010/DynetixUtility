@@ -1,0 +1,26 @@
+
+********************************************************`
+This is Dynetix Utility framework
+********************************************************`
+
+
+1. To install the framework, include in your Podfile
+   for an IOS project:
+
+    pod 'DynetixUtility', :git => 'https://github.com/tchan1010/DynetixUtility.git', :tag => '1.0.2'
+
+2.  Then link your app with the  DynetixUtility.framework 
+
+
+3. In your app's Swift source files, add:
+
+   import DynetixUtility
+
+4. Call any of these functions:
+
+   showMessage( caller: UIViewController,  title : String,  msg : String,
+                         doEmail : Bool = false,  Image : UIImage? = nil)
+
+   sendEmail( caller: UIViewController,  subject : String,  msg : String,  image : UIImage? )
+
+   Note: to send email, the 'caller' should be a MFMailComposeViewControllerDelegate
