@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DynetixUtility"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Dynetix utility functiuons framework."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/tchan1010/DynetixUtility.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/tchan1010/DynetixUtility.git", :tag => "1.0.1" }
   #spec.source       = { :path =>'.' }
 
 
@@ -135,6 +135,6 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-  spec.swift_version = "4.2"
+  spec.swift_version = "5.0"
 
 end
