@@ -9,22 +9,24 @@ This is Dynetix Utility framework
 
     pod 'DynetixUtility', :git => 'https://github.com/tchan1010/DynetixUtility.git', :tag => '1.0.3'
 
-2.  Then link your app with the  DynetixUtility.framework 
+
+2. Then link your app with the  DynetixUtility.framework 
 
 
 3. In your app's Swift source files, add:
 
    import DynetixUtility
 
+
 4. Call any of these functions:
 
-   showMessage( caller: UIViewController,  title : String,  msg : String,
-                         doEmail : Bool = false,  Image : UIImage? = nil)
+   * func showMessage(_ caller: UIViewController, _ title : String, _  msg : String,
+                        _  doEmail : Bool = false, _ image : UIImage? = nil)
 
-   sendEmail( caller: UIViewController,  subject : String,  msg : String,  image : UIImage? )
+   * func sendEmail(_ caller: UIViewController, _ subject : String, _  msg : String, _  image : UIImage? )
 
-   Note: to send email, the 'caller' should be a MFMailComposeViewControllerDelegate
+     Note: to send email, the 'caller' should be a MFMailComposeViewControllerDelegate
 
-   func second2Str(_ total_seconds : Int64 ) -> String
+   * func second2Str(_ total_seconds : Int64 ) -> String
 
-   func date2Str(_ date : Date ) -> String 
+   * func date2Str(_ date : Date ) -> String 
