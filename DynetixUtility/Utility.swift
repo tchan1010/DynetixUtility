@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import MessageUI
 
+
+/* Convert a given elapsed time to a string in hrs, mins, seconds */
 public func second2Str(_ totals : Int64 ) -> String {
     var min : Int64 = totals / 60
     let sec : Int64 = totals % 60
@@ -22,6 +24,8 @@ public func second2Str(_ totals : Int64 ) -> String {
     return strHr + strMin + strSec
 }
 
+
+/* Convert a given date object to a time stamp string */
 public func date2Str(_ date : Date ) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateStyle = .short
@@ -29,6 +33,8 @@ public func date2Str(_ date : Date ) -> String {
     return dateFormatter.string(from: date)
 }
 
+
+/* send an email with an optional image attachment */
 public func sendEmail(_ caller: UIViewController, _ subject : String, _ msg : String, _ image : UIImage? )
 {
     guard MFMailComposeViewController.canSendMail() else {
@@ -55,6 +61,10 @@ public func sendEmail(_ caller: UIViewController, _ subject : String, _ msg : St
         caller.present(picker, animated:true, completion:nil)
 }
 
+
+/* show a message to user, and optional send the message and any image as
+   an attachement via email
+*/
 public func showMessage(_ caller: UIViewController, _ title : String, _ msg : String,
                         _ doEmail : Bool = false, _ Image : UIImage? = nil)
 {
