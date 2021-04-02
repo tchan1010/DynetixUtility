@@ -16,15 +16,15 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DynetixUtility"
-  spec.version      = "1.0.4"
-  spec.summary      = "Dynetix utility functiuons framework."
+  spec.version      = "1.0.5"
+  spec.summary      = "Dynetix utility functions framework."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "A set of utility functions, written in Swift, from Dynetix"
+  spec.description  = "A set of utility functions, written in Swift, from Dynetix Design Solutions Inc"
 
   spec.homepage     = "http://www.tjsystems.com/products.htm"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -51,9 +51,9 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Terence Chan" => "tchan1010@gmail.com" }
+  spec.author             = { "Terence Chan" => "twc@dynetix.com" }
   # Or just: spec.author    = "Terence Chan"
-  # spec.authors            = { "Terence Chan" => "tchan1010@gmail.com" }
+  # spec.authors            = { "Terence Chan" => "twc@dynetix.com" }
   # spec.social_media_url   = "https://twitter.com/Terence Chan"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/tchan1010/DynetixUtility.git", :tag => "1.0.4" }
+  spec.source       = { :git => "https://github.com/tchan1010/DynetixUtility.git", :tag => "1.0.5" }
   #spec.source       = { :path =>'.' }
 
 
