@@ -5,7 +5,7 @@ This is Dynetix Utility framework
 
 
 1. To install the framework, include in your Podfile
-   for an IOS project:
+   for an IOS project (for iOS 12.0 or later):
 
     pod 'DynetixUtility', :git => 'https://github.com/tchan1010/DynetixUtility.git'
 

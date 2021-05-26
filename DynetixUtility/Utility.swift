@@ -1,9 +1,8 @@
 //
 //  Utility.swift
-//  AutoPal
 //
 //  Created by Terence Chan on 5/12/17.
-//  Copyright © 2017 Terence Chan. All rights reserved.
+//  Copyright © Dynetix Desifn Solutions Inc. All rights reserved.
 //
 
 import Foundation
