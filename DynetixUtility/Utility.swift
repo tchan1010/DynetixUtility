@@ -64,17 +64,19 @@ public func sendEmail(_ caller: UIViewController, _ subject : String, _ msg : St
 /* show a message to user, and optional send the message and any image as
    an attachement via email
 */
-public func showMessage(_ caller: UIViewController, _ title : String, _ msg : String,
-                        _ doEmail : Bool = false, _ Image : UIImage? = nil)
+public func showMessage(_ caller: UIViewController, _ title : String,
+                        _ msg : String, _ doEmail : Bool = false,
+                        _ Image : UIImage? = nil)
 {
     let vc = UIAlertController(title: title, message: msg, preferredStyle: .alert)
-    let ok = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-    vc.addAction(ok)
+    
+    vc.addAction( UIAlertAction(title: "OK", style: .cancel, handler: nil))
+    
     if (doEmail && MFMailComposeViewController.canSendMail()) {
-         let email = UIAlertAction(title: "Email", style: .default, handler: { action in
+        vc.addAction(UIAlertAction(title: "Email", style: .default, handler: { action in
                 sendEmail(caller, title, msg, Image)
-         })
-        vc.addAction(email)
+         }))
     }
+    
     caller.present(vc, animated:true, completion: nil)
 }
