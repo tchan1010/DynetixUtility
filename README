@@ -10,6 +10,9 @@ This is Dynetix Utility framework
     pod 'DynetixUtility', :git => 'https://github.com/tchan1010/DynetixUtility.git'
 
 
+   Alternatively, you may use Swift Package Manager to add DynetixUtility
+   as a Swift package to your project.
+
 2. Then link your app with the  DynetixUtility.framework 
 
 
